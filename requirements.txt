@@ -3,6 +3,7 @@ pandas
 numpy
 sentence-transformers
 vaderSentiment
-deep-translator
+deep-translator == 1.11.4
 openpyxl
-torch
+torch == 2.2.1
+safetensors
