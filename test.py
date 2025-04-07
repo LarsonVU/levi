@@ -169,7 +169,7 @@ def main():
 
         train_model = st.button("Train Model")
         if train_model:
-            try:
+            #try:
                 if train_text_column and train_category_column:
                         # Prepare the training DataFrame
                         prepared_train_df = prepare_train_df(basis_df, train_category_column, train_text_column)
@@ -179,8 +179,8 @@ def main():
                         st.session_state["model"], st.session_state["category_embeddings"]  = create_model(prepared_train_df, train_category_column, train_text_column)
 
                         st.success("New model and embeddings have been created successfully using your uploaded data!")
-            except Exception as e:
-                st.error(f"An error occurred while training with your data: {e}")
+            #except Exception as e:
+             #   st.error(f"An error occurred while training with your data: {e}")
 
     # Tab 2: Run algorithm
     with tab2:
