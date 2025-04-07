@@ -5,3 +5,4 @@ sentence-transformers
 vaderSentiment
 deep-translator
 openpyxl
+torch
