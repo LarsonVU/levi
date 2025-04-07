@@ -1,0 +1,4 @@
+Download the files app.py, requirements.txt & digitale wereld submap.xlsx
+Open the command prompt and run: pip install -r requirements.txt
+After installing the required packages, run: streamlit run app.py
+Have fun with the models!
