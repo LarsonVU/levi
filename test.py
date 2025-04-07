@@ -5,11 +5,17 @@ from sentence_transformers import SentenceTransformer, util
 import streamlit as st
 import math
 from io import BytesIO
-
+import torch
+import os
 
 import re
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from deep_translator import GoogleTranslator
+
+torch.classes.__path__ = [os.path.join(torch.__path__[0], torch.classes.__file__)] 
+
+# or simply:
+torch.classes.__path__ = []
 
 def string_to_list(s):
     return [str(x) for x in s.strip('[]').split(',')]
